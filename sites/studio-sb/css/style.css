@@ -1,0 +1,199 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.m-20 {
+  margin: 20px;
+}
+.m-30 {
+  margin: 30px;
+}
+.m-40 {
+  margin: 40px;
+}
+.m-50 {
+  margin: 50px;
+}
+
+/* .logo {
+  padding-top: 0;
+} */
+.parallax-container {
+  height: 350px;
+}
+#container {
+  background: rgba(255, 255, 255, 0.9);
+  margin-top: 60px;
+  border-radius: 5px;
+  padding: 0;
+}
+
+/* .opening{
+  padding: 15px;
+} */
+
+#tel-no {
+  /* font-weight: bold; */
+  padding: 0 35px;
+}
+
+#opening * {
+  border: none !important;
+}
+
+#opening td {
+  font-size: 0.8rem;
+  margin: 0 0 0 10px;
+  padding: 0 20px;
+}
+#header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1rem;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  font-weight: bolder;
+  font-size: 5rem;
+}
+#title-sb {
+  color: RGB(202, 15, 32);
+  height: 60px;
+  font-size: 3.5rem;
+  background: lightgray;
+  padding: 0 7px;
+  line-height: 4rem;
+  border-right: 80px solid RGB(202, 15, 32);
+}
+#tagline {
+  line-height: 2rem;
+}
+
+#advice {
+  max-width: 60%;
+  margin: 0 auto;
+}
+#advice h5 {
+  background: RGB(202, 15, 32);
+}
+.gallery {
+  margin-bottom: 50px;
+}
+
+.gallery img {
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#times {
+  font-size: 0.8rem;
+}
+
+#times td,
+#times th {
+  padding: 1px;
+  font-weight: 100;
+  color: white;
+}
+
+footer {
+  margin-top: 50px;
+}
+/* footer ul {
+  display: flex;
+} */
+
+/* footer li {
+  padding: 3px;
+} */
+
+/* footer ul li a {
+  font-size: 0.9rem;
+} */
+
+#welcome {
+  padding: 50px;
+}
+
+#welcome h5 {
+  padding: 20px;
+}
+
+#prices tbody tr td:nth-child(2) {
+  font-weight: bold;
+  float: right;
+}
+
+#prices td {
+  padding: 10px;
+}
+.narrow_table {
+  padding: 0;
+}
+
+.active {
+  color: RGBA(202, 15, 32, 1);
+  font-weight: bold;
+}
+
+.alert-success {
+  background: #f4f4f4 !important;
+  color: black;
+  padding: 5px;
+  border: 1px solid red;
+}
+
+button.close {
+  float: right;
+  border: none;
+  margin: 2px;
+}
+
+@media (max-width: 767.98px) {
+  .parallax-container {
+    height: 250px;
+  }
+  #container {
+    margin-top: 23px;
+  }
+  #header-title {
+    display: flex;
+    flex-direction: column;
+    /* font-size: 0.2rem; */
+  }
+  #title-sb {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    height: 40px;
+    background: lightgray;
+    padding: 0px 2px;
+    line-height: 3rem;
+    border-right: 55px solid RGB(202, 15, 32);
+  }
+
+  #title {
+    font-size: 3rem;
+  }
+
+  #tagline {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  #welcome {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,173 @@
+.contact-info {
+    display: none;
+}
+
+.display_board {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    background-image: url("../img/contact/logo-close-up.jpg");
+    border: 5px solid white;
+    border-bottom: 100px solid white;
+    margin-bottom: 50px;
+}
+
+.careers {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    text-align: right;
+}
+
+.careers h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: deeppink;
+}
+
+.careers p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.careers p:last-of-type {
+    margin-bottom: none;
+}
+
+#contact {
+    margin: 0 auto;
+}
+
+#contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+}
+
+#message {
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+#name,
+#email {
+    height: 30px;
+
+}
+
+.button {
+    width: 100px;
+    height: 25px;
+}
+
+.promo-video {
+    display: -web;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.glutopia-intro {
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    margin: 5px;
+    background-image: url("../img/contact/Bakery-intro.jpg");
+}
+
+.glutopia-invest {
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    margin: 5px;
+    background-image: url("../img/contact/Glutopia-invest.jpg");
+}
+
+.glutopia-intro h3,
+.glutopia-invest h3 {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+#contact-form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#contact h1 {
+    text-align: center;
+}
+
+#submit-btn {
+    margin: 30px auto 50px;
+}
+
+
+/*media queries*/
+
+@media screen and (max-width: 900px) {
+
+    .display_board {
+        position: relative;
+        width: 95%;
+        height: 700px;
+        margin: 0 auto;
+        background-image: none;
+        border: 5px solid white;
+        border-bottom: 100px solid white;
+        margin-bottom: 50px;
+    }
+
+    .careers {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0%;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .careers h1 {
+        font-size: 2rem;
+    }
+
+    .contact-info {
+        display: block;
+        border: 1px dashed gray;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 0 40px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #contact-form {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+}

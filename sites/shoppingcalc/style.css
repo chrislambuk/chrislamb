@@ -1,0 +1,73 @@
+.container {
+  margin-top: 10px;
+  /* background: teal; */
+  position: relative;
+  max-width: 500px;
+  /* border: 1px solid #eee; */
+  padding: 30px;
+  border-radius: 5px;
+  /* border: 1px solid #aaa; */
+  color: white;
+}
+
+/* ::placeholder{
+  color: #aaa;
+} */
+
+/* table {
+  padding: 1px;
+  background: #eee;
+} */
+
+td,
+th {
+  padding-left: 20px;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.alert {
+  position: absolute;
+  text-align: center;
+  top: 2%;
+  left: 2%;
+  background: white;
+  padding: 5px 10px;
+  color: black;
+  width: 96%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  font-size: 0.8rem;
+  color: black;
+  padding: 5px 10px;
+  background: white;
+  border-radius: 3px;
+}
+a:hover {
+  font-size: 0.8rem;
+  color: black;
+  padding: 5px 10px;
+  background: rgb(255, 90, 90);
+  border-radius: 3px;
+}
+
+th:nth-child(3) {
+  width: 15%;
+  text-align: center;
+}
+
+input {
+  color: white;
+}
+
+
+input:focus {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 grey !important;
+}

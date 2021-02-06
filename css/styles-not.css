@@ -1,0 +1,31 @@
+h2 {
+  color: lightgrey;
+  background-color: #222222;
+  width: 100%;
+  padding: 0 10px;
+  border-radius: 2px;
+}
+.time {
+  color: white !important;
+  background: #555555;
+  padding: 8px;
+  border-radius: 5px;
+}
+a {
+  color: #eee;
+}
+a:hover {
+  text-decoration: none;
+  color: #fcc135;
+}
+@media (max-width: 480px) {
+  #title {
+    font-size: 1.3em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+}

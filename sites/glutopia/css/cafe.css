@@ -1,0 +1,152 @@
+.info {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section img {
+  border: 5px solid white;
+  border-bottom: 50px solid white;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px black;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+section img:hover {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+article p {
+  font-size: 1rem;
+}
+
+.info .baking,
+.info .creating,
+.info .bespoke {
+  width: 330px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.creating {
+  margin: 0 10px;
+}
+
+.info section {
+  border: 1px dashed gray;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.info section h1 {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.info section p {
+  font-weight: lighter;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.amp {
+  font-size: 3em;
+  text-align: center;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.fas {
+  font-size: 1rem;
+}
+
+.cafe {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 900px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.cafe div {
+  border: 5px solid white;
+}
+
+.image1 p,
+.image5 p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.image1 {
+  background-image: url('../img/cafe/full-to-burst.jpg');
+  width: 550px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.image2 {
+  background-image: url('../img/cafe/glutopia-food-shot.jpg');
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.image3 {
+  background-image: url(../img/cafe/cake-close-up.jpg);
+  width: 200px;
+  height: 250px;
+  background-size: cover;
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+}
+
+.image4 {
+  background-image: url('../img/cafe/glut-queue.jpg');
+  width: 200px;
+  height: 250px;
+  background-size: cover;
+  -webkit-transform: rotate(6deg);
+  transform: rotate(6deg);
+}
+
+.image5 {
+  position: relative;
+  background-image: url('../img/cafe/party-in-glut.jpg');
+  width: 450px;
+  height: 250px;
+  background-size: cover;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+

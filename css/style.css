@@ -1,0 +1,153 @@
+.tooltips a {
+	margin: 2px;
+	width: 150px;
+}
+.view {
+	width: 150px;
+	margin: 2px;
+}
+.mb-4 {
+	margin-bottom: 4px;
+}
+#portTitle {
+	display: inline-block;
+}
+.about-me {
+	margin: -50px 0 0 0;
+	z-index: 1;
+	text-align: center;
+	padding: 30px 0 0 0;
+}
+
+.tooltips {
+	padding-top: 20px;
+}
+.me-div {
+	display: flex;
+	justify-content: center;
+	z-index: 10;
+}
+.me {
+	z-index: 100;
+	border-radius: 50%;
+	width: 150px;
+	max-height: 150px;
+	/* box-shadow: 2px 2px 4px rgba(0,0,0,0.2); */
+}
+
+.devstore{
+	display: flex;
+	flex-direction: column;
+}
+.section-heading {
+	color: #eee;
+	/* text-decoration: underline; */
+	padding: 5px 10px 10px 10px;
+	font-weight: lighter;
+	border-bottom: 5px solid RGBA(252, 236, 84, 1);
+}
+
+h5 {
+	text-align: center;
+}
+
+.card-web .card-content,
+.card-video .card-content,
+.card-cd .card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 400px;
+}
+
+
+.card-app .card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 500px;
+}
+
+.card-image img {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+	font-size: 0.6rem !important;
+}
+
+.collection-item {
+	padding: 5px 10px !important;
+	font-size: 0.9rem !important;
+}
+
+.training-card {
+	padding: 5px;
+}
+
+.information-cards {
+	display: flex;
+	flex-direction: row;
+}
+
+.training {
+	flex: 1;
+}
+.skills {
+	flex: 1;
+}
+
+/* media queries */
+
+/* @media (max-width: 1680px) {
+	.information-cards {
+		flex-direction: row;
+		width: 100%;
+	}
+} */
+@media (max-width: 1444px) {
+	.information-cards {
+		flex-direction: column;
+		width: 100%;
+	}
+	#portTitle {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 767px) {
+	#title {
+		font-size: 1.5rem;
+	}
+	#portTitle {
+		display: inline-block;
+	}
+	.collection-item {
+		text-align: center;
+	}
+
+	.badge {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	#title {
+		font-size: 1.5rem;
+	}
+	#portTitle {
+		display: none;
+	}
+	h4 {
+		font-size: 2em;
+	}
+	h3 {
+		font-size: 2em;
+	}
+	.badge {
+		display: block;
+	}
+	.collection-item {
+		text-align: left;
+	}
+}

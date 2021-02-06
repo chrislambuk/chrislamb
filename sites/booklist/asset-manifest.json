@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sites/booklist/static/css/main.f9d8c859.chunk.css",
+    "main.js": "/sites/booklist/static/js/main.ee85d65e.chunk.js",
+    "main.js.map": "/sites/booklist/static/js/main.ee85d65e.chunk.js.map",
+    "runtime~main.js": "/sites/booklist/static/js/runtime~main.87bad788.js",
+    "runtime~main.js.map": "/sites/booklist/static/js/runtime~main.87bad788.js.map",
+    "static/js/2.80fe3032.chunk.js": "/sites/booklist/static/js/2.80fe3032.chunk.js",
+    "static/js/2.80fe3032.chunk.js.map": "/sites/booklist/static/js/2.80fe3032.chunk.js.map",
+    "index.html": "/sites/booklist/index.html",
+    "precache-manifest.838f54bfe5242a8e317bc1edad24ec4e.js": "/sites/booklist/precache-manifest.838f54bfe5242a8e317bc1edad24ec4e.js",
+    "service-worker.js": "/sites/booklist/service-worker.js",
+    "static/css/main.f9d8c859.chunk.css.map": "/sites/booklist/static/css/main.f9d8c859.chunk.css.map"
+  }
+}

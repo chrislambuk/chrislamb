@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jaldi', sans-serif;
+  background: #222222;
+  color: white;
+  margin-top: 220px;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.topper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 50%;
+  flex: 1 0 50%;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.logo {
+  font-size: 5em;
+  color: white;
+  line-height: 1em;
+  margin-left: 15%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.social .fab {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0 5px;
+}
+
+.social .fab:hover {
+  color: deeppink;
+}
+
+.social {
+  display: flex;
+  width: 300px;
+  height: 100%;
+  align-self: flex-end;
+  justify-content: center;
+  /* margin-right: 15%; */
+}
+
+.tag {
+  border: 1px solid gray;
+  display: block;
+  font-size: 0.8rem;
+  position: absolute;
+  left: 50px;
+  top: 84%;
+  line-height: 1rem;
+  padding: 0 5px;
+  letter-spacing: 0.05rem;
+}
+
+nav {
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+}
+
+ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  list-style-type: none;
+  margin: 0 20%;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.active:after,
+.active:before {
+  display: inline;
+  content: ' ~ ';
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: deeppink;
+}
+
+.active {
+  color: deeppink;
+}
+
+.sticky-head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: RGBA(34, 34, 34, 0.99);
+  z-index: 99;
+}
+
+.address {
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-top: 15px;
+  margin-bottom: 0;
+  border-top: 1px solid gray;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: deeppink;
+}
+
+.article1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 auto;
+}
+
+.about-us {
+  width: 80%;
+  font-size: 1.2rem;
+  padding-right: 50px;
+  border-right: 1px dashed gray;
+}
+
+.about-us h1 {
+  font-size: 2em;
+  color: deeppink;
+}
+
+.gluten-free {
+  -webkit-align-self: center;
+  align-self: center;
+  width: 20%;
+}
+
+.gluten-free p {
+  font-size: 2rem;
+  text-align: center;
+  padding-left: 30px;
+  line-height: 2em;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 100%;
+}
+
+.cake {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width: 400px;
+  height: 350px;
+  margin: 50px;
+  border: 5px solid white;
+  border-bottom: 50px solid white;
+  border-radius: 3px;
+}
+
+.cake a {
+  font-size: 1.2em;
+}
+
+.cake p {
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+.cupcakes {
+  background-image: url('../img/home/cupcake-blue.jpg');
+  box-shadow: 5px 5px 5px black;
+  background-size: cover;
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.birthday {
+  background-image: url('../img/home/choc-cake.jpg');
+  box-shadow: 5px 5px 5px black;
+  background-size: cover;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.brownies {
+  background-image: url('../img/home/raspberry-brownie.jpg');
+  box-shadow: 5px 5px 5px black;
+  background-size: cover;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.coffee {
+  background-image: url('../img/home/latte-art.jpg');
+  box-shadow: 5px 5px 5px black;
+  background-size: cover;
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.menu p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.menu p:first-child {
+  font-size: 2rem;
+}
+
+.cake_gallery {
+  background-image: url('../img/home/cakes.jpg');
+  width: 700px;
+  height: 351px;
+  line-height: 351px;
+  background-size: cover;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.cake_gallery p {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.hours {
+  margin: 0 auto;
+}
+
+.open {
+  color: green;
+  margin: 0 auto;
+}
+
+.closed {
+  color: red;
+  text-align: center;
+}
+
+.openclose {
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.hours td {
+  padding: 3px;
+  width: 200px;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  border: 1px solid #333333;
+}
+
+footer {
+  padding: 0 20%;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.hours td:first-of-type {
+  text-align: right;
+}
+/* media query ------------------------------------------------------------ */
+
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 95%;
+    margin-top: -50px;
+  }
+  .active:after,
+  .active:before {
+    display: inline;
+    content: '';
+  }
+  .topper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 50%;
+    flex: 1 0 50%;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .logo {
+    font-size: 2.2rem;
+    color: white;
+    line-height: 1em;
+    margin-left: 0;
+    margin-bottom: 10px;
+    -webkit-align-self: center;
+    align-self: center;
+  }
+  .tag {
+    border: 1px solid gray;
+    font-size: 0.2rem;
+    position: absolute;
+    left: 15px;
+    top: 84%;
+    line-height: 0.7rem;
+    padding: 0;
+    /* letter-spacing: 0.05rem; */
+    width: 145px;
+    text-align: center;
+  }
+  .social {
+    align-self: center;
+    margin-right: 0;
+    /* font-size: 0.2rem; */
+  }
+
+  .social .fab {
+    font-size: 1.2rem;
+    padding: 0 15px;
+  }
+
+  ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* font-size: 1rem; */
+  }
+  li a {
+    /* display: block; */
+    font-size: 1.2rem;
+    /* text-align: center; */
+    text-decoration: none;
+  }
+  body {
+    margin-top: 180px;
+  }
+  .address {
+    display: none;
+  }
+  .about-us {
+    padding: 0 0 10px 0;
+    width: 100%;
+    font-size: 1rem;
+    border-right: none;
+    border-bottom: 1px dashed gray;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7rem;
+  }
+  .article1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .gluten-free {
+    padding: 20px 0;
+    -webkit-align-self: center;
+    align-self: center;
+    width: 100%;
+  }
+  .gluten-free p {
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 0;
+  }
+  .cake {
+    width: 350px;
+    height: 350px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    margin: 10px;
+  }
+  .cake p {
+    font-size: 1rem;
+  }
+  .cake_gallery {
+    width: 350px;
+    border: 5px solid white;
+    background-position: center;
+    text-align: center;
+  }
+  .hours {
+    width: 60%;
+  }
+  footer {
+    padding: 0;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .cafe {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 900px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}

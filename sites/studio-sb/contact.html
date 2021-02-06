@@ -1,0 +1,262 @@
+<html>
+
+<head>
+  <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="navbar-fixed">
+    <nav class="grey darken-3">
+      <div class="container">
+        <div class="nav-wrapper ">
+          <a href="#" class="brand-logo right">0208 547 0113</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- mobile nav -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <table id="opening">
+      <tbody>
+        <tr>
+          <td>OPENING TIMES</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MON | TUE | WED</td>
+          <td>09:00</td>
+          <td>19:00</td>
+        </tr>
+        <tr>
+          <td>THU</td>
+          <td>09:00</td>
+          <td>20:00</td>
+        </tr>
+        <tr>
+          <td>FRI</td>
+          <td>09.00</td>
+          <td>19:00</td>
+        </tr>
+        <tr>
+          <td>SAT</td>
+          <td>09.00</td>
+          <td>18:00</td>
+        </tr>
+        <tr>
+          <td>SUN</td>
+          <td>10.00</td>
+          <td>17:00</td>
+        </tr>
+        <tr>
+          <td>BANK HOLIDAYS</td>
+          <td>10.00</td>
+          <td>17:00</td>
+        </tr>
+      </tbody>
+    </table>
+    <p id="tel-no">TEL: 0208 547 0113</p>
+  </ul>
+  <!-- header -->
+  <div class="parallax-container">
+    <div class="parallax"><img src="images/hair.jpg" /></div>
+    <div class="container">
+      <div class="row">
+        <div class="logo col l8 m12 s12 offset-l2 z-depth-2" id="container">
+          <div id="header-title" class="center grey darken-3">
+            <span id="title" class="white-text ">STUDIO</span>
+            <span id="title-sb" class="red-text grey lighten-3">SB</span>
+          </div>
+          <!-- <p id="title" class="center white-text grey darken-3">STUDIO <span id="title-sb">SB</span></p> -->
+          <div class="center">
+            <h5 id="tagline" class="light grey-text text-darken-3">
+              Quality Contemporary Hairdressing <br />For Men
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- form -->
+  <div class="container">
+    <div class="row">
+      <div class="col l8 m10 s12 offset-l2 offset-m1">
+        <h3 class="center light grey-text text-darken-3">Contact form</h3>
+        <form id="contact-form" method="post" action="contact.php" role="form">
+          <div class="messages"></div>
+          <div class="controls">
+            <div class="row">
+              <div class="col m6 s12">
+                <div class="input-field">
+                  <input id="form_name" type="text" name="name" class="form-control" required="required"
+                    data-error="Firstname is required." />
+                  <label for="form_name">Firstname *</label>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col m6 s12">
+                <div class="input-field">
+                  <input id="form_lastname" type="text" name="surname" class="form-control" required="required"
+                    data-error="Lastname is required." />
+                  <div class="help-block with-errors"></div>
+                  <label for="form_lastname">Lastname *</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col m6 s12">
+                <div class="input-field">
+                  <input id="form_email" type="email" name="email" class="form-control" required="required"
+                    data-error="Valid email is required." />
+                  <div class="help-block with-errors"></div>
+                  <label for="form_email">Email *</label>
+                </div>
+              </div>
+              <div class="col m6 s12">
+                <div class="input-field">
+                  <select id="form_need" name="need" class="form-control" required="required"
+                    data-error="Please specify your need.">
+                    <option value="">Please select...</option>
+                    <option value="Request Appointment">Request Appointment</option>
+                    <option value="Job Enquiry">Job Enquiry</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div class="help-block with-errors"></div>
+                  <!-- <label for="form_need">Please Specify *</label> -->
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col m12 s12">
+                <div class="input-field">
+                  <textarea style="height:200px" id="form_message" name="message" class="form-control" placeholder="Your message" rows="4"
+                    required="required" data-error="Please, leave us a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                  <!-- <label for="form_message">Message *</label> -->
+                </div>
+              </div>
+              <div class="col m12 s12">
+                <!-- <input type="submit" class="waves-effect waves-light btn" value="Send message"> -->
+                <button class="btn waves-effect waves-light" type="submit" name="action">
+                  Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col m12 s12">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /.8 -->
+    </div>
+    <!-- /.row-->
+  </div>
+  <!-- /.container-->
+
+
+  <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <table id="times" class="col l5 m5 s12">
+          <thead>
+            <tr>
+              <td></td>
+              <td>OPEN</td>
+              <td>CLOSE</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MON | TUE | WED</td>
+              <td>09:00</td>
+              <td>19:00</td>
+            </tr>
+            <tr>
+              <td>THU</td>
+              <td>09:00</td>
+              <td>20:00</td>
+            </tr>
+            <tr>
+              <td>FRI</td>
+              <td>09.00</td>
+              <td>19:00</td>
+            </tr>
+            <tr>
+              <td>SAT</td>
+              <td>09.00</td>
+              <td>18:00</td>
+            </tr>
+            <tr>
+              <td>SUN</td>
+              <td>10.00</td>
+              <td>17:00</td>
+            </tr>
+            <tr>
+              <td>BANK HOLIDAYS</td>
+              <td>10.00</td>
+              <td>17:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="left">
+        <p>Copyright &copy; <span id="year" class="text-light"></span> Studio SB</p>
+      </div>
+      <div class="right">
+        <p>0208 547 0113</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+    integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+  <script src="contact.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('select').formSelect();
+    });
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+    $(document).ready(function () {
+      $('.parallax').parallax();
+    });
+    $('#year').text(new Date().getFullYear());
+  </script>
+</body>
+
+</html>
